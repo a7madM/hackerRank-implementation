@@ -1,9 +1,6 @@
 package main;
 
-import implementation.DivisibleSumPairs;
-import implementation.EqualStacks;
-import implementation.Kangaroo;
-import implementation.LonelyInteger;
+import implementation.*;
 
 public class Main {
 
@@ -13,5 +10,13 @@ public class Main {
 
         // new EqualStacks();
 
+        MiniMaxSum miniMaxSum = new MiniMaxSum();
+        long[] input = miniMaxSum.getInput();
+
+        long[] output = miniMaxSum.getResults(input);
+
+        for (int i = 0; i < output.length; i++) {
+            System.out.print(output[i] + " ");
+        }
     }
 }
